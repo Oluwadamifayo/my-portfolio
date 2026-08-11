@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajileye Oluwadamifayo | Front-End Developer</title>
+    <title>Ajileye Oluwadamifayo Erastus | Front-End Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,7 @@
 
     <nav class="navbar">
         <a href="#" class="nav-logo-link">
-            <img src="https://i.ibb.co/Kzc2nx9M/business-logocompany-logoalphabet-logo-1786445784652.jpg" alt="Ajileye Oluwadamifayo Logo" class="nav-logo-img">
+            <img src="https://i.ibb.co/Kzc2nx9M/business-logocompany-logoalphabet-logo-1786445784652.jpg" alt="Ajileye Oluwadamifayo Erastus Logo" class="nav-logo-img">
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -23,7 +23,7 @@
 
     <header class="hero">
         <div class="hero-badge">🚀 Available for Projects</div>
-        <h1>Hi, I'm <span class="highlight">Ajileye Oluwadamifayo</span></h1>
+        <h1>Hi, I'm <span class="highlight">Ajileye Oluwadamifayo Erastus</span></h1>
         <p class="hero-subtitle">Front-End Developer crafting interactive, sleek & performant web experiences.</p>
         <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">Explore My Work</a>
@@ -149,7 +149,7 @@
     </section>
 
     <footer>
-        <p>© 2026 Ajileye Oluwadamifayo. Handcrafted with HTML, CSS & Termux.</p>
+        <p>© 2026 Ajileye Oluwadamifayo Erastus. Handcrafted with HTML, CSS & Termux.</p>
     </footer>
 
     <script>
@@ -157,11 +157,10 @@
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                } else {
-                    entry.target.classList.remove('active');
+                    observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
     </script>
