@@ -1,27 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #0f172a;
+    color: #f8fafc;
 }
 
 header {
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0 30px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #38bdf8;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-top: 5px;
 }
 
 section {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #1e293b;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 8px;
+}
+
+p {
+    color: #cbd5e1;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-badge {
+    background-color: #334155;
+    color: #38bdf8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .project-card {
-    border-left: 4px solid #0070f3;
-    padding-left: 15px;
+    background-color: #0f172a;
+    border-left: 4px solid #38bdf8;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.project-card h3 {
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #64748b;
+    font-size: 0.85rem;
 }
