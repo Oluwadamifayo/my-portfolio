@@ -214,10 +214,16 @@ body {
 }
 
 .skill-icon {
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
+
+.html-color { color: #e34f26; }
+.css-color { color: #1572b6; }
+.github-color { color: #181717; }
+.termux-color { color: #000000; }
+.vercel-color { color: #000000; }
 
 .skill-card h3 {
     font-size: 1.05rem;
@@ -333,8 +339,12 @@ body {
 }
 
 .contact-icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
+
+.whatsapp-color { color: #25d366; }
+.phone-color { color: #0284c7; }
+.gmail-color { color: #ea4335; }
 
 .contact-card h4 {
     font-size: 0.95rem;
