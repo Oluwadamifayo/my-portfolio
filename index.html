@@ -155,6 +155,8 @@
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active'); // Removes active class when scrolled out of view
                 }
             });
         }, { threshold: 0.15 });
