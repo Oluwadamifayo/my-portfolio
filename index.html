@@ -10,7 +10,9 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-logo">AO<span>.</span></div>
+        <a href="#" class="nav-logo-link">
+            <img src="https://i.ibb.co/Kzc2nx9M/business-logocompany-logoalphabet-logo-1786445784652.jpg" alt="Ajileye Oluwadamifayo Logo" class="nav-logo-img">
+        </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -156,7 +158,7 @@
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
                 } else {
-                    entry.target.classList.remove('active'); // Removes active class when scrolled out of view
+                    entry.target.classList.remove('active');
                 }
             });
         }, { threshold: 0.15 });
