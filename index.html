@@ -19,7 +19,7 @@
         </ul>
     </nav>
 
-    <header class="hero scroll-reveal">
+    <header class="hero reveal">
         <div class="hero-badge">🚀 Available for Projects</div>
         <h1>Hi, I'm <span class="highlight">Ajileye Oluwadamifayo</span></h1>
         <p class="hero-subtitle">Front-End Developer crafting interactive, sleek & performant web experiences.</p>
@@ -29,37 +29,37 @@
         </div>
     </header>
 
-    <section id="about" class="section scroll-reveal">
+    <section id="about" class="section reveal">
         <h2 class="section-title">About Me</h2>
         <p class="about-text">
             <strong>Code meets design.</strong> I’m a front-end developer with a keen eye for detail and a drive to build interactive, memorable web experiences. I love tackling UI/UX challenges, experimenting with clean design layouts, and constantly expanding my tech stack. Outside of the editor, I’m active in logistics and operations at <strong>Baloking Gas Ng</strong>.
         </p>
     </section>
 
-    <section id="skills" class="section scroll-reveal">
+    <section id="skills" class="section reveal">
         <h2 class="section-title">Tech Stack & Tools</h2>
         <div class="skills-grid">
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-brands fa-html5 skill-icon html-color"></i>
                 <h3>HTML5</h3>
                 <p>Semantic markup & accessible structure</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
                 <h3>CSS3</h3>
                 <p>Modern layouts, Flexbox, Grid & animations</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-brands fa-github skill-icon github-color"></i>
                 <h3>Git & GitHub</h3>
                 <p>Version control & repository management</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-terminal skill-icon termux-color"></i>
                 <h3>Termux</h3>
                 <p>Mobile-first development & command-line tools</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-triangle-exclamation skill-icon vercel-color"></i>
                 <h3>Vercel</h3>
                 <p>Instant CI/CD & global deployment</p>
@@ -67,11 +67,11 @@
         </div>
     </section>
 
-    <section id="projects" class="section scroll-reveal">
+    <section id="projects" class="section reveal">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
 
-            <div class="project-card">
+            <div class="project-card reveal">
                 <div class="project-header">
                     <span class="project-category">E-Commerce & Catalog</span>
                     <h3>MS Wigs Studio</h3>
@@ -83,7 +83,7 @@
                 <a href="https://ms-wigs-studio.vercel.app/" target="_blank" class="project-link">Visit Live Site →</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card reveal">
                 <div class="project-header">
                     <span class="project-category">Corporate Web</span>
                     <h3>Baloking Engineering Project Ltd</h3>
@@ -95,7 +95,7 @@
                 <a href="https://balokingengineeringprojectltd.vercel.app/" target="_blank" class="project-link">Visit Live Site →</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card reveal">
                 <div class="project-header">
                     <span class="project-category">Creative Media</span>
                     <h3>Ruby's Lens</h3>
@@ -110,33 +110,33 @@
         </div>
     </section>
 
-    <section id="contact" class="section scroll-reveal">
+    <section id="contact" class="section reveal">
         <h2 class="section-title">Let's Connect</h2>
         <p class="contact-intro">Interested in working together or have a project in mind? Reach out anytime!</p>
         
         <div class="contact-links">
-            <a href="https://wa.me/2348146496565" target="_blank" class="contact-card">
+            <a href="https://wa.me/2348146496565" target="_blank" class="contact-card reveal">
                 <i class="fa-brands fa-whatsapp contact-icon whatsapp-color"></i>
                 <div>
                     <h4>WhatsApp</h4>
                     <p>+234 814 649 6565</p>
                 </div>
             </a>
-            <a href="tel:+2348146496565" class="contact-card">
+            <a href="tel:+2348146496565" class="contact-card reveal">
                 <i class="fa-solid fa-phone contact-icon phone-color"></i>
                 <div>
                     <h4>Phone Call</h4>
                     <p>+234 814 649 6565</p>
                 </div>
             </a>
-            <a href="mailto:erastusajileyeaare@gmail.com" class="contact-card">
+            <a href="mailto:erastusajileyeaare@gmail.com" class="contact-card reveal">
                 <i class="fa-solid fa-envelope contact-icon gmail-color"></i>
                 <div>
                     <h4>Gmail</h4>
                     <p>erastusajileyeaare@gmail.com</p>
                 </div>
             </a>
-            <a href="https://github.com/Oluwadamifayo" target="_blank" class="contact-card">
+            <a href="https://github.com/Oluwadamifayo" target="_blank" class="contact-card reveal">
                 <i class="fa-brands fa-github contact-icon github-color"></i>
                 <div>
                     <h4>GitHub</h4>
@@ -150,5 +150,16 @@
         <p>© 2026 Ajileye Oluwadamifayo. Handcrafted with HTML, CSS & Termux.</p>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>

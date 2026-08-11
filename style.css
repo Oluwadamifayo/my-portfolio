@@ -26,20 +26,16 @@ body {
     padding-top: 90px;
 }
 
-/* Scroll Animation Engine (CSS Pure) */
-.scroll-reveal {
-    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+/* Scroll Animation Engine */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Navbar */
