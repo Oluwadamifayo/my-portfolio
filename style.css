@@ -7,14 +7,15 @@
 }
 
 :root {
-    --bg-primary: #0a0f1d;
-    --bg-secondary: #131c31;
-    --bg-card: #1a253e;
-    --accent: #38bdf8;
-    --accent-hover: #0284c7;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --border-color: #273553;
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-card: #f1f5f9;
+    --accent: #0284c7;
+    --accent-hover: #0369a1;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 /* Navbar */
@@ -31,13 +32,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(10, 15, 29, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 8%;
+    padding: 16px 8%;
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     z-index: 1000;
 }
 
@@ -62,7 +64,7 @@ body {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s;
 }
 
@@ -73,20 +75,23 @@ body {
 /* Hero Section */
 .hero {
     max-width: 900px;
-    margin: 40px auto 60px;
-    padding: 0 20px;
+    margin: 20px auto 50px;
+    padding: 40px 20px;
     text-align: center;
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
 }
 
 .hero-badge {
     display: inline-block;
-    background: rgba(56, 189, 248, 0.1);
+    background: #e0f2fe;
     color: var(--accent);
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
-    font-weight: 600;
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -95,16 +100,15 @@ body {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 15px;
+    color: var(--text-primary);
 }
 
 .highlight {
-    background: linear-gradient(135deg, #38bdf8, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--accent);
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto 30px;
@@ -120,14 +124,14 @@ body {
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
 .btn-primary {
     background-color: var(--accent);
-    color: var(--bg-primary);
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -138,7 +142,7 @@ body {
 .btn-secondary {
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    background: var(--bg-secondary);
+    background: var(--bg-card);
 }
 
 .btn-secondary:hover {
@@ -150,7 +154,7 @@ body {
 /* Common Section Layout */
 .section {
     max-width: 900px;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
     padding: 0 20px;
 }
 
@@ -159,6 +163,7 @@ body {
     margin-bottom: 25px;
     position: relative;
     display: inline-block;
+    color: var(--text-primary);
 }
 
 .section-title::after {
@@ -174,18 +179,19 @@ body {
 
 .about-text {
     background: var(--bg-secondary);
-    padding: 25px;
-    border-radius: 12px;
+    padding: 28px;
+    border-radius: 16px;
     border: 1px solid var(--border-color);
     color: var(--text-secondary);
     font-size: 1.05rem;
+    box-shadow: var(--shadow);
 }
 
 .about-text strong {
     color: var(--text-primary);
 }
 
-/* Skills Cards */
+/* Skills Cards Layout */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -198,6 +204,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
+    box-shadow: var(--shadow);
     transition: transform 0.3s, border-color 0.3s;
 }
 
@@ -215,6 +222,7 @@ body {
 .skill-card h3 {
     font-size: 1.05rem;
     margin-bottom: 4px;
+    color: var(--text-primary);
 }
 
 .skill-card p {
@@ -222,7 +230,7 @@ body {
     color: var(--text-secondary);
 }
 
-/* Projects Cards */
+/* Projects Grid Layout */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -232,11 +240,12 @@ body {
 .project-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: var(--shadow);
     transition: transform 0.3s, border-color 0.3s;
 }
 
@@ -249,13 +258,14 @@ body {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.5px;
 }
 
 .project-card h3 {
     font-size: 1.25rem;
     margin: 5px 0 10px;
+    color: var(--text-primary);
 }
 
 .project-card p {
@@ -277,12 +287,13 @@ body {
     padding: 4px 10px;
     border-radius: 12px;
     color: var(--text-secondary);
+    font-weight: 600;
 }
 
 .project-link {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
 }
 
@@ -290,7 +301,7 @@ body {
     text-decoration: underline;
 }
 
-/* Contact Cards */
+/* Contact Cards Layout */
 .contact-intro {
     color: var(--text-secondary);
     margin-bottom: 20px;
@@ -305,13 +316,14 @@ body {
 .contact-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    padding: 18px;
+    padding: 20px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 15px;
     text-decoration: none;
     color: var(--text-primary);
+    box-shadow: var(--shadow);
     transition: border-color 0.3s, transform 0.3s;
 }
 
@@ -326,6 +338,7 @@ body {
 
 .contact-card h4 {
     font-size: 0.95rem;
+    color: var(--text-primary);
 }
 
 .contact-card p {
@@ -340,6 +353,8 @@ footer {
     border-top: 1px solid var(--border-color);
     color: var(--text-secondary);
     font-size: 0.85rem;
+    background: var(--bg-secondary);
+    margin-top: 40px;
 }
 
 /* Responsive Styles */
