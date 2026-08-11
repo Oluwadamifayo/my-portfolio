@@ -3,63 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajileye Oluwadamifayo | Portfolio</title>
+    <title>Ajileye Oluwadamifayo | Front-End Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Ajileye Oluwadamifayo 👋</h1>
-        <p class="tagline">Front-End Developer</p>
+    <nav class="navbar">
+        <div class="nav-logo">AO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-badge">🚀 Available for Projects</div>
+        <h1>Hi, I'm <span class="highlight">Ajileye Oluwadamifayo</span></h1>
+        <p class="hero-subtitle">Front-End Developer crafting interactive, sleek & performant web experiences.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Code meets design. I’m Ajileye Oluwadamifayo, a front-end developer with an eye for detail and a drive to build interactive, memorable websites. I love solving UI/UX challenges, experimenting with web animations, and constantly expanding my tech stack. Outside of the editor, I’m usually a worker in Baloking Gas Ng.</p>
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            <strong>Code meets design.</strong> I’m a front-end developer with a keen eye for detail and a drive to build interactive, memorable web experiences. I love tackling UI/UX challenges, experimenting with clean design layouts, and constantly expanding my tech stack. Outside of the editor, I’m active in logistics and operations at <strong>Baloking Gas Ng</strong>.
+        </p>
     </section>
 
-    <section id="skills">
-        <h2>Tech Skills</h2>
-        <div class="skills-container">
-            <span class="skill-badge">HTML</span>
-            <span class="skill-badge">CSS</span>
-            <span class="skill-badge">Git</span>
-            <span class="skill-badge">Termux</span>
-            <span class="skill-badge">Vercel</span>
+    <section id="skills" class="section">
+        <h2 class="section-title">Tech Stack & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-icon">🌐</span>
+                <h3>HTML5</h3>
+                <p>Semantic markup & accessible structure</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <h3>CSS3</h3>
+                <p>Modern layouts, Flexbox, Grid & animations</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">⚡</span>
+                <h3>Git & GitHub</h3>
+                <p>Version control & repository management</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">📱</span>
+                <h3>Termux</h3>
+                <p>Mobile-first development & command-line tools</p>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">▲</span>
+                <h3>Vercel</h3>
+                <p>Instant CI/CD & global deployment</p>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
 
-        <div class="project-card">
-            <h3>MS Wigs Studio</h3>
-            <p>An interactive catalog showcase displaying hair products, categorized listings, and dynamic pricing options.</p>
-            <a href="https://ms-wigs-studio.vercel.app/" target="_blank" class="btn">View Live Site</a>
-        </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-category">E-Commerce & Catalog</span>
+                    <h3>MS Wigs Studio</h3>
+                </div>
+                <p>An interactive product catalog website showcasing hair products, dynamic pricing, and categorized navigation.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JSON</span><span>Vercel</span>
+                </div>
+                <a href="https://ms-wigs-studio.vercel.app/" target="_blank" class="project-link">Visit Live Site →</a>
+            </div>
 
-        <div class="project-card">
-            <h3>Baloking Engineering Project Ltd</h3>
-            <p>Official website displaying engineering solutions, services, and project portfolios.</p>
-            <a href="https://balokingengineeringprojectltd.vercel.app/" target="_blank" class="btn">View Live Site</a>
-        </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-category">Corporate Web</span>
+                    <h3>Baloking Engineering Project Ltd</h3>
+                </div>
+                <p>Official web platform showcasing engineering solutions, corporate services, and active project portfolios.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>Responsive</span>
+                </div>
+                <a href="https://balokingengineeringprojectltd.vercel.app/" target="_blank" class="project-link">Visit Live Site →</a>
+            </div>
 
-        <div class="project-card">
-            <h3>Ruby's Lens</h3>
-            <p>A sleek visual portfolio platform designed to highlight creative media and photography work.</p>
-            <a href="https://rubyslens.vercel.app/" target="_blank" class="btn">View Live Site</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-category">Creative Media</span>
+                    <h3>Ruby's Lens</h3>
+                </div>
+                <p>A sleek visual portfolio platform designed for showcasing photography and creative visual media projects.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>Portfolio</span>
+                </div>
+                <a href="https://rubyslens.vercel.app/" target="_blank" class="project-link">Visit Live Site →</a>
+            </div>
+
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or inquiries:</p>
-        <p><strong>Email:</strong> <a href="mailto:erastusajileyeaare@gmail.com">erastusajileyeaare@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Oluwadamifayo" target="_blank">github.com/Oluwadamifayo</a></p>
+    <section id="contact" class="section">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-intro">Interested in working together or have a project in mind? Reach out anytime!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:erastusajileyeaare@gmail.com" class="contact-card">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <h4>Email</h4>
+                    <p>erastusajileyeaare@gmail.com</p>
+                </div>
+            </a>
+            <a href="https://github.com/Oluwadamifayo" target="_blank" class="contact-card">
+                <span class="contact-icon">💻</span>
+                <div>
+                    <h4>GitHub</h4>
+                    <p>github.com/Oluwadamifayo</p>
+                </div>
+            </a>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Ajileye Oluwadamifayo. Built with HTML, CSS & Termux.</p>
+        <p>© 2026 Ajileye Oluwadamifayo. Handcrafted with HTML, CSS & Termux.</p>
     </footer>
 
 </body>
